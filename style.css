@@ -50,7 +50,7 @@ body{
 }
 
 .quiz-box .question-number{
-    font-size: 20px;
+    font-size: 19px;
     color: var(--fourth) !important;
     font-weight: 600;
     border-bottom: 1px solid var(--fourth);
