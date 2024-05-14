@@ -26,47 +26,46 @@
     </nav>
     <div class="quiz-box custom-box">
       <div class="question-number">
-        Pergunta 1 de 5
+        
       </div>
       <div class="question-text mt-2 mb-3">
-        Qual dos seguintes métodos é considerado o mais eficaz para reduzir a pegada de carbono pessoal?
+        
       </div>
       <div class="option-container">
-        <div class="option">Comer uma dieta vegetariana ou vegana</div>
-        <div class="option">Usar transporte público em vez de dirigir um carro particular</div>
-        <div class="option">Reduzir o consumo de energia em casa, desligando aparelhos eletrônicos quando não estiverem em uso</div>
-        <div class="option">Instalar painéis solares para gerar eletricidade renovável em casa</div>
+        
       </div>
       <div class="next-btn">
-        <button type="button" class="btn mt-3">Próximo</button>
+        <button type="button" class="btn mt-3" onclick="next()">Próximo</button>
       </div>
       <div class="indicator">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        
       </div>
     </div>
 
-    <div class="result-box custom-box text-center">
+    <div class="result-box custom-box text-center hide">
       <h1>Resultado</h1>
       <table>
         <tr>
           <td>Total de Perguntas</td>
-          <td><span class="total-questions">5</span></td>
+          <td><span class="total-questions"></span></td>
         </tr>
         <tr>
           <td>Total de Tentativas</td>
-          <td><span class="total-attemp">2</span></td>
+          <td><span class="total-attemp"></span></td>
         </tr>
         <tr>
           <td>Respostas Corretas</td>
-          <td><span class="total-correct">5</span></td>
+          <td><span class="total-correct"></span></td>
+        </tr>
+        <tr>
+          <td>Respostas Erradas</td>
+          <td><span class="total-wrong"></span></td>
         </tr>
       </table>
-      <button type="button" class="btn mx-2  my-2 itens-center">Tentar Novamente</button>
-      <button type="button" class="btn">Página Inicial</button>
+      <button type="button" class="btn mx-2  my-2 itens-center" onclick="tryAgain()">Tentar Novamente</button>
+      <button type="button" class="btn" onclick="goToHome()">Página Inicial</button>
     </div>
+    <script src="script.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

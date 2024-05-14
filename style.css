@@ -14,6 +14,8 @@
     --secondary: #000000;
     --tertiary: #ffffff;
     --fourth: #FFFAFA;
+    --fifth: #1dad10e7;
+    --sixth: #ee2222;
 }
 body{
     background-color: var(--fourth) !important;
@@ -73,6 +75,47 @@ body{
     border-radius: 5px;
     margin-bottom: 10px;
     cursor: pointer;
+    opacity: 0;
+    animation: fadeIn 3s ease forwards;
+    position: relative;
+    overflow: hidden;
+}
+.quiz-box .option-container .option.already-answered{
+    pointer-events: none;
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.quiz-box .option-container .option.correct::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--fifth);
+    z-index: -1;
+}
+.quiz-box .option-container .option.correct{
+    color: #ffffff;
+}
+.quiz-box .option-container .option.wrong::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--sixth);
+    z-index: -1;
+}
+.quiz-box .option-container .option.wrong{
+    color: #ffffff;
 }
 .quiz-box .indicator{
     border-top: 1px solid #FFFAFA;
@@ -86,6 +129,20 @@ body{
     border-radius: 50%;
     margin-right: 3px;
     margin-top: 15px;
+}
+.quiz-box .indicator div.correct{
+    background-color: var(--fifth);
+    background-image: url("img/correct.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.quiz-box .indicator div.wrong{
+    background-color: var(--sixth);
+    background-image: url("img/wrong.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .custom-box::before,
 .custom-box::after{
@@ -125,4 +182,12 @@ body{
 .navbar{
     background-color: var(--primary);
     padding-bottom: 20px;
+}
+@media(max-width: 767px){
+    .result-box .btn{
+        margin-bottom: 15px;
+    }
+    body{
+        padding: 15px;
+    }
 }
