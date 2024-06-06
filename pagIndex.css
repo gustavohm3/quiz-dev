@@ -11,6 +11,7 @@
     --fourth: #FFFAFA;
     --fifth: #1dad10e7;
     --sixth: #ee2222;
+    --seventh: #f5f7f8;
 }
 body{
     /*background-color: var(--secondary) !important;*/
@@ -114,7 +115,44 @@ body{
     text-decoration: none;
     font-size: 1.12rem;
 }
-
+.card{
+    height: 100%;
+    width: auto;
+}
+.input-email{
+    /* background-color: #f5f7f8; */
+    background-image: url(img/input.png);
+    background-position: center;
+}
+.input{
+    padding: 60px 0 0 0;
+    background-color: var(--seventh);
+}
+.input-title{
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    padding-bottom: 1.8rem;
+    color: var(--fourth);
+}
+.input-email label{
+    font-family: "Roboto", sans-serif;
+    color: var(--fourth);
+}
+.input-email form div{
+    display: flex;
+    flex-direction:column;
+    padding: 20px;
+    width: 70%;
+}
+.input-email button{
+    background-color: var(--primary);
+    color: var(--fourth);
+    padding: 8px 20px 8px 20px;
+}
+.input-email button:hover{
+    background-color: var(--fifth);
+    color: var(--fourth);
+}
 footer{
     background-color: var(--primary);
     color: var(--tertiary);
@@ -336,3 +374,8 @@ footer .copyright p{
         flex-direction: column-reverse;
     }
 }
+/* @media (max-width: 576px) {
+    .op .card{
+        width: 100%;
+    }
+} */
