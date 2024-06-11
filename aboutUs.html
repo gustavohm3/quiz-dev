@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="donateStyle.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="aboutUs.css" media="screen" />
     <link rel="icon" type="image/x-icon" href="img/fav.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -16,81 +16,52 @@
     <nav class="navbar navbar-expand-sm py-0 sticky-top">
         <div class="container mt-3 mb-1">
           <a href="index.html" class="navbar-brand d-flexalign-items-center text-light"
-                style="font-size: 30px; font-family:Arial, Helvetica, sans-serif;">
-                <i class="bi-bootstrap-fill fs-1 me-2"></i>EcoVida
+              style="font-size: 30px; font-family:Arial, Helvetica, sans-serif;">
+              <i class="bi-bootstrap-fill fs-1 me-2"></i>EcoVida
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar"><span
               class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse" id="menuNavbar">
             <div class="navbar-nav ms-auto" style="font-size: 18px;">
-              <a href="aboutUs.html" class="nav-link active text-light">Sobre Nós</a>
-              <!-- <a href="donate.html" class="nav-link active text-light">Doe</a> -->
+              <!-- <a href="#" class="nav-link active text-light">Sobre Nós</a> -->
+              <a href="donate.html" class="nav-link active text-light">Doe</a>
               <a href="quiz.html" class="nav-link active text-light">Quiz</a>
             </div>
           </div>
         </div>
     </nav>
 
-    <div id="carouselExample" class="carousel slide carousel-fade">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="imagem">
-            <img src="img/doe6.png" class="w-100">
-          </div>
-          <div class="carousel-caption">
-            <h1 class="title-img">DOE AGORA</h1>
-            <p class="para-img">Seja um doador e faça parte da transformação!</p>
-          </div>
-        </div>
+    <div class="title">
+        <h1>Quem é o EcoVida?</h1>
     </div>
 
-    <div class="container">
-      <div class="card text-center position-relative top-50 start-50 translate-middle h-100 mb-0" style="max-width: 50rem; margin-top: 15rem;">
-        <div class="card-body">
-          <p class="card-text">Existem várias outras formas de doar para o EcoVida. Uma delas é através do Mercado Pago, e você não precisa ser cliente ou já ter uma conta. Você pode fazer a sua doação, de forma fácil, rápida e segura, via Boleto, PIX ou cartão de crédito – de forma automática e recorrente. Escolha o melhor valor, da forma que preferir e nos ajude a seguir na missão em prol da conservação da biodiversidade brasileira.</p>
+    <div class="container mb-5">
+        <p class="text">A EcoVida foi fundada em 2024 por um grupo de ambientalistas visionários que compartilharam uma paixão comum pela natureza e um desejo de ver mudanças reais e duradouras. Desde então, crescemos de uma pequena organização local para uma instituição reconhecida nacional e internacionalmente, graças ao apoio de nossos voluntários, parceiros e doadores. A EcoVida é uma instituição dedicada à promoção e proteção do meio ambiente, fundada com a missão de fomentar práticas sustentáveis, educar a população e influenciar políticas públicas em prol de um planeta mais verde e saudável. Com uma equipe apaixonada e diversificada, a EcoVida trabalha incansavelmente para criar um futuro onde a harmonia entre a humanidade e a natureza seja a norma, não a exceção.</p>
+
+        <p class="text">Nossa missão é promover a conservação ambiental por meio de projetos inovadores, educação ambiental, advocacia e ações comunitárias. Acreditamos que cada pessoa tem o poder de fazer a diferença e estamos aqui para capacitar indivíduos, comunidades e organizações a se unirem em prol de um mundo mais sustentável.</p>
+
+        <p class="text">Realizamos projetos de conservação em diversas regiões, focando na preservação de ecossistemas críticos, recuperação de áreas degradadas e proteção da biodiversidade. Trabalhamos em colaboração com cientistas, governos e comunidades locais para garantir que nossos esforços sejam eficazes e sustentáveis a longo prazo. Acreditamos que a educação é a chave para um futuro sustentável. Oferecemos programas educativos para escolas, empresas e comunidades, abordando temas como reciclagem, consumo consciente, energia renovável e conservação da água. Nossos workshops, palestras e materiais educativos são projetados para inspirar e capacitar todos a adotarem práticas mais sustentáveis em suas vidas diárias.</p>
+
+        <p class="text">Atuamos ativamente na defesa de políticas públicas que protejam o meio ambiente. Trabalhamos junto a legisladores, formuladores de políticas e organizações não governamentais para promover leis e regulamentos que preservem nossos recursos naturais e mitiguem as mudanças climáticas. Acreditamos na importância de uma voz forte e informada para influenciar mudanças significativas. Promovemos e participamos de iniciativas comunitárias que incentivam a participação ativa da população na preservação do meio ambiente. Organizamos mutirões de limpeza, plantio de árvores, campanhas de reciclagem e eventos de conscientização ambiental. Acreditamos que a ação local pode ter um impacto global, e encorajamos todos a se envolverem.</p>
+
+    </div>
+    <div class="input-email">
+        <div class="container p-5">
+          <form action="">
+            <h1 class="input-title mt-3">Cadastre-se abaixo!</h1>
+            <h4 class="input-title">Receba alertas de ações e novos conteúdos no seu email.</h4>
+            <div class="mb-3">
+              <label for="text" class="form-label">Nome</label>
+              <input type="text" id="text" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" class="form-control">
+            </div>
+            <button type="submit" class="btn">Inscreva-se</button>
+          </form>
         </div>
       </div>
-    </div>
-
-    <div class="container">
-      <div class="row row-cols-1 row-cols-md-3 g-3">
-        <div class="col-12 col-sm-6">
-          <div class="card text-center" style="max-width: 25rem;">
-            <div class="card-body">
-              <h3 class="card-title">Doe para o EcoVida</h3>
-              <p class="card-text" style="font-size: 3rem;font-weight: 500;">R$ 50</p>
-              <a href="#" class="btn btn-success">Clique Aqui</a>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col">
-          <div class="card text-center" style="max-width: 25rem;">
-            <div class="card-body">
-              <h3 class="card-title">Doe para o EcoVida</h3>
-              <p class="card-text" style="font-size: 3rem;font-weight: 500;">R$ 180</p>
-              <a href="#" class="btn btn-success">Clique Aqui</a>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col">
-          <div class="card text-center" style="max-width: 25rem;">
-            <div class="card-body">
-              <h3 class="card-title">Doe para o EcoVida</h3>
-              <p class="card-text" style="font-size: 3rem; font-weight: 500;">R$ 250</p>
-              <a href="#" class="btn btn-success">Clique Aqui</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <h3 class="title-qr">Ou se preferir...</h3>
-    <div class="text-center">
-      <img src="img/qr.png" class="img-fluid" style="width: 250px;">
-    </div>
-
     <footer>
         <div class="" mt-5 pt-5 pb-5 footer>
           <div class="container">
@@ -202,6 +173,6 @@
             </div>
           </div>
         </div>
-      </footer>
+    </footer>
 </body>
 </html>
